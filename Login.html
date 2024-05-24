@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt.br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<!-- alinhar div-->
+<style>
+    
+    .container{
+       
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       height: 100vh;
+
+    }
+    body{
+        background-color: lightskyblue;
+        
+    }
+.Login{
+    
+        width: 400px;
+        height: 400px;
+        background-color: transparent;
+}
+input{
+    background-color: white;
+    border: 1px;
+    border-radius: 10%;
+    position: relative;
+    top: 200px;
+    left: 85px;
+}
+
+#senha{
+    background-color: white;
+    border: 1px;
+    border-radius: 10%;
+    position: relative;
+    top: 200px;
+    left: 85px;
+}
+label{
+    position: relative;
+    top: 200px;
+    left: 80px;
+    
+}
+#cadastro{
+    position: relative;
+    top: 203px;
+    left: 90px;
+}
+#navbar{
+    background-color: white;
+    color: black;
+    margin: 0;
+    max-width: 1800px;
+    width: 1800px;
+    height: 50px;
+    border-radius: 10%;
+ }
+ .compras{
+    width: 40px;
+    height: 40px;
+    position: relative;
+  top: -35px;
+    left: 1250px;
+    background-color: white;
+    cursor: pointer;
+}
+a{
+    top: 12px;
+    left: 1145px;
+    position: relative;
+  }
+ #login{
+    top: 12px;
+    left: 1150px;
+    position: relative;
+  }
+.buscar{
+    left: 200px;
+    position: relative;
+    background-color: transparent;
+    width: 400px;
+    height: 20px;
+    top: -400px;
+  } 
+
+</style>
+<body>
+    <div id="navbar">
+        <a href="./index.html"style="
+        position: relative;
+        top: -10px;
+            ">Home</a>
+        <a href="./Login.html" id="login"
+        style="
+        position: relative;
+        top: -10px;">Login</a>
+        <img class="compras" src="https://www.kindpng.com/picc/m/187-1872194_shopping-cart-svg-clip-arts-icone-carrinho-de.png" >
+   </div>
+    <div class="container">
+<div class="Login">
+    <form >
+        <label for="user">Users</label>
+        <input type="text" id="usarios" name="Users"> <br>
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" name="passaword">
+    </form>
+        <p id="cadastro">Não tem conta?<a href="./cadastro.html"
+            style="
+                position: relative;
+                top: 0px;
+                left: 5px;">Criar Conta</a></p>
+</div>
+</div>
+</body>
+</html>

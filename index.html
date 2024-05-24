@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt.br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+ #navbar{
+    background-color: white;
+    color: black;
+    margin: 0;
+    max-width: 1800px;
+    width: 1800px;
+    height: 50px;
+    border-radius: 10%;
+ }
+ body{
+    background-color: lightslategray;
+ }
+  a{
+    top: 12px;
+    left: 1145px;
+    position: relative;
+  }
+ #login{
+    top: 12px;
+    left: 1150px;
+    position: relative;
+  }
+  input{
+    left: 200px;
+    position: relative;
+    background-color: transparent;
+    width: 400px;
+    height: 20px;
+  } 
+img{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 15px;
+    left: 20px;
+}
+div{
+    background-color: white;
+    width: 150px;
+    height: 200px;
+    border-radius: 10%;
+    cursor: pointer;
+}
+.compras{
+    width: 40px;
+    height: 40px;
+    position: relative;
+  top: -35px;
+    left: 1250px;
+    background-color: white;
+    cursor: pointer;
+}
+</style>
+<body>
+    <div id="navbar">
+         <a href="./index.html">Home</a>
+         <a href="./Login.html" id="login">Login</a>
+         <form >
+            <input type="text" placeholder="Buscar">
+         </form>
+         <img class="compras" src="https://www.kindpng.com/picc/m/187-1872194_shopping-cart-svg-clip-arts-icone-carrinho-de.png" >
+    </div>
+   
+    <div class="produto">
+        <img src="https://imgcentauro-a.akamaihd.net/768x768/983029D1A1.jpg" id="imagem" >
+        <p>Bola Nike</p>
+        <p> Valor: R$ 150,00</p>
+    </div>
+    <script>
+      document.addEventListener( 'DOMContentLoaded', function(){
+        var image=
+        document.getElementById('imagem')
+    image.addEventListener("click",
+        function(){
+         window.location.href="./imagemproduto1.html";
+             });
+        } );
+    </script>
+
+</body>
+</html>
